@@ -35,7 +35,7 @@ docker start node01
 ### Copy data to container
 ```
 docker cp tools/data.cql node01:/root/data.cql
-docker exec -it node01 bash -c "cqlsh -u cassandra -p cassandra"
+docker exec -it node01 clqsh
 #In cqlsh:
 USE investments;
 SOURCE '/root/data.cql'
