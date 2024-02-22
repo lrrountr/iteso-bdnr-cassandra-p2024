@@ -8,10 +8,15 @@ A place to share cassandra app code
 sudo apt update
 sudo apt install python3-pip
 
-# Install and activate virtual env
+# Install and activate virtual env (Linux/MacOS)
 python3 -m pip install virtualenv
 python3 -m venv ./venv
 source ./venv/bin/activate
+
+# Install and activate virtual env (Windows)
+python3 -m pip install virtualenv
+python3 -m venv ./venv
+.\venv\bin\Activate.ps1
 
 # Install project python requirements
 python3 -m pip install -r requirements.txt
